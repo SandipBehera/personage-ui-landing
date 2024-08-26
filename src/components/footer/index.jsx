@@ -10,8 +10,8 @@ const Footer = () => {
           <section style={{ backgroundColor: "#000000" }}>
             <div className="footer-sec">
               <div className="footer-spacing">
-                <div className="flex flex-wrap -m-4 w-full">
-                  <div className="p-4 md:w-3/12">
+                <div className="flex flex-wrap w-full md:-m-4 w-full">
+                  <div className="p-4 w-full md:w-3/12">
                     <img
                       src="../../img/logo_white.png"
                       alt="TresCorp Logo"
@@ -115,8 +115,8 @@ const Footer = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="p-4 md:w-9/12">
-                  <div className="flex flex-wrap -m-4">
+                  <div className="p-4 w-full md:w-9/12">
+                  <div className="flex flex-wrap p-4 lg:-m-4">
                     <div className="p-4 md:w-3/12">
                     <h2 className="text-white text-xs leading-9 font-extrabold lg:text-xl">
                     Company

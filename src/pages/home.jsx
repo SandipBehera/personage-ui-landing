@@ -179,10 +179,10 @@ const HomeComponent = () => {
                 >
                   <div className="iv-new-hero-hero-modal-wrapper">
                     <div className="iv-new-hero-hero-container ">
-                      <h1 className="text-5xl place-content-center">
+                      <h1 className="text-3xl lg:text-5xl text-center sm:text-3xl text-center ">
                         Save your engineering <b>bandwidth</b>
                       </h1>
-                      <p className="text-lg mt-2">
+                      <p className="text-lg p-4 text-center lg:text-lg mt-2">
                         We help you hire the best engineers by conducting
                         technical interviews for you
                       </p>
@@ -262,13 +262,13 @@ const HomeComponent = () => {
           </FaderComponent>
           <FaderComponent>
             <section className="text-gray-600 body-font mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-40 md:my-0">
-              <div className="flex flex-row items-center justify-center m-auto">
-                <div className="lg:w-1/2 text-center">
+              <div className="flex flex-col lg:flex-row items-center justify-center m-auto">
+                <div className="w-full lg:w-1/2 text-center">
                   <video className="w-full" autoPlay loop muted>
                     <source src="../../video/video.mp4" type="video/mp4" />
                   </video>
                 </div>
-                <div className="lg:w-1/2 text-center">
+                <div className="w-full lg:w-1/2 text-center mt-4 lg:mt-0">
                   <h1 className="text-3xl font-bold">
                     <b>Personage.ai</b>: Revolutionizing Human Resource
                     Automation with AI
@@ -335,9 +335,9 @@ const HomeComponent = () => {
           </section>
           <FaderComponent>
             <section className="text-gray-600 body-font mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-40 md:my-0">
-              <div className="flex flex-row items-center justify-center m-auto">
-                <div className="lg:w-1/2">
-                  <h1 className="text-3xl ">
+              <div className="flex flex-col lg:flex-row items-center justify-center m-auto">
+                <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
+                  <h1 className="text-3xl">
                     Experts from every domain to every company size
                   </h1>
                   <p style={{ textAlign: "left" }}>
@@ -346,7 +346,7 @@ const HomeComponent = () => {
                     every company size.
                   </p>
                 </div>
-                <div className="lg:w-1/2 text-center">
+                <div className="w-full lg:w-1/2 text-center">
                   <Globe />
                 </div>
               </div>
@@ -354,29 +354,29 @@ const HomeComponent = () => {
           </FaderComponent>
           <FaderComponent>
             <section className="text-gray-600 body-font mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-40 md:my-0">
-              <div className="flex flex-row items-center justify-center m-auto ">
-                <div className="lg:w-full text-center">
-                  <h1 className="text-3xl ">
+              <div className="flex flex-col lg:flex-row items-center justify-center m-auto text-center lg:text-left">
+                <div className="lg:w-full">
+                  <h1 className="text-3xl">
                     Your own <b>360°</b> solution
                   </h1>
                   <p className="mt-2">
-                    Screen, interview and shortlist the best candidates all in
-                    on place
+                    Screen, interview, and shortlist the best candidates all in
+                    one place.
                   </p>
                 </div>
               </div>
               <div
-                className="flex border  border-slate mt-10 w-fit lg:ml-56"
+                className="flex border border-slate mt-10 w-fit mx-auto lg:ml-56"
                 style={{ backgroundColor: "rgb(248, 246, 249)" }}
               >
-                <div className="container mx-auto flex flex-row items-center justify-center">
+                <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center">
                   {tabs.map((tab) => (
                     <button
                       key={tab.tab_name}
                       onClick={() => setActiveTab(tab.tab_name)}
                       className={`relative px-4 py-2 font-semibold focus:outline-none ${
                         activeTab === tab.tab_name
-                          ? "text-blue "
+                          ? "text-blue"
                           : "text-gray-600"
                       }`}
                     >
@@ -398,31 +398,31 @@ const HomeComponent = () => {
               <div className="mt-10">
                 {activeTab === "Create_Requesition" && (
                   <FaderComponent>
-                    <div className="flex flex-row items-center justify-center m-auto mt-6 gap-6">
-                      <div className="lg:w-1/2">
+                    <div className="flex flex-col lg:flex-row items-center justify-center m-auto mt-6 gap-6">
+                      <div className="lg:w-1/2 w-full">
                         <img
                           src="../../img/assessments.png"
                           alt="create requesition"
                         />
                       </div>
-                      <div className="lg:w-1/2 ">
-                        <h1 className="text-3xl ">
+                      <div className="lg:w-1/2 w-full">
+                        <h1 className="text-3xl">
                           <i
                             className="fa-solid fa-file-contract"
                             style={{ color: "#4ec346" }}
                           ></i>{" "}
                           Create Requesition
                         </h1>
-                        <p className="flex mt-4 ">
+                        <p className="flex mt-4">
                           Our experts have conducted interviews for companies of
                           all sizes and domains. We have experts for every
                           domain and every company size.
                         </p>
-                        <div className="mt-4 mx-auto flex flex-row items-center gap-6">
+                        <div className="mt-4 mx-auto flex flex-col sm:flex-row items-center gap-6">
                           <button className="flex items-center justify-center bg-black hover:bg-blue text-white font-bold py-4 px-8 rounded-full mt-4">
                             Get Started
                           </button>
-                          <a href="#" className=" text-blue mt-4">
+                          <a href="#" className="text-blue mt-4">
                             Explore Our Platform{" "}
                             <i className="fa-solid fa-arrow-right"></i>
                           </a>
@@ -433,31 +433,31 @@ const HomeComponent = () => {
                 )}
                 {activeTab === "Upload_Resumes" && (
                   <FaderComponent>
-                    <div className="flex flex-row items-center justify-center m-auto mt-6 gap-6">
-                      <div className="lg:w-1/2">
+                    <div className="flex flex-col lg:flex-row items-center justify-center m-auto mt-6 gap-6">
+                      <div className="lg:w-1/2 w-full">
                         <img
                           src="../../img/outsourced_interviews.png"
                           alt="upload resumes"
                         />
                       </div>
-                      <div className="lg:w-1/2 ">
-                        <h1 className="text-3xl ">
+                      <div className="lg:w-1/2 w-full">
+                        <h1 className="text-3xl">
                           <i
                             className="fa-regular fa-file-pdf"
                             style={{ color: "#e66d0a" }}
                           ></i>{" "}
                           Upload Resumes
                         </h1>
-                        <p className="flex mt-4 ">
+                        <p className="flex mt-4">
                           Our experts have conducted interviews for companies of
                           all sizes and domains. We have experts for every
                           domain and every company size.
                         </p>
-                        <div className="mt-4 mx-auto flex flex-row items-center gap-6">
+                        <div className="mt-4 mx-auto flex flex-col sm:flex-row items-center gap-6">
                           <button className="flex items-center justify-center bg-black hover:bg-blue text-white font-bold py-4 px-8 rounded-full mt-4">
                             Get Started
                           </button>
-                          <a href="#" className=" text-blue mt-4">
+                          <a href="#" className="text-blue mt-4">
                             Explore Our Platform{" "}
                             <i className="fa-solid fa-arrow-right"></i>
                           </a>
@@ -468,31 +468,28 @@ const HomeComponent = () => {
                 )}
                 {activeTab === "AI_Screening" && (
                   <FaderComponent>
-                    <div className="flex flex-row items-center justify-center m-auto mt-6 gap-6">
-                      <div className="lg:w-1/2">
-                        <img
-                          src="../../img/projects.png"
-                          alt="upload resumes"
-                        />
+                    <div className="flex flex-col lg:flex-row items-center justify-center m-auto mt-6 gap-6">
+                      <div className="lg:w-1/2 w-full">
+                        <img src="../../img/projects.png" alt="AI Screening" />
                       </div>
-                      <div className="lg:w-1/2 ">
-                        <h1 className="text-3xl ">
+                      <div className="lg:w-1/2 w-full">
+                        <h1 className="text-3xl">
                           <i
                             className="fa-solid fa-robot"
                             style={{ color: "#0b55d5" }}
                           ></i>{" "}
                           AI Screening
                         </h1>
-                        <p className="flex mt-4 ">
+                        <p className="flex mt-4">
                           Our experts have conducted interviews for companies of
                           all sizes and domains. We have experts for every
                           domain and every company size.
                         </p>
-                        <div className="mt-4 mx-auto flex flex-row items-center gap-6">
+                        <div className="mt-4 mx-auto flex flex-col sm:flex-row items-center gap-6">
                           <button className="flex items-center justify-center bg-black hover:bg-blue text-white font-bold py-4 px-8 rounded-full mt-4">
                             Get Started
                           </button>
-                          <a href="#" className=" text-blue mt-4">
+                          <a href="#" className="text-blue mt-4">
                             Explore Our Platform{" "}
                             <i className="fa-solid fa-arrow-right"></i>
                           </a>
@@ -503,31 +500,31 @@ const HomeComponent = () => {
                 )}
                 {activeTab === "Download_Reports" && (
                   <FaderComponent>
-                    <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
-                      <div className="lg:w-1/2">
+                    <div className="flex flex-col lg:flex-row items-center justify-center m-auto mt-6 gap-6">
+                      <div className="lg:w-1/2 w-full">
                         <img
                           src="../../img/live_interviews.png"
-                          alt="upload resumes"
+                          alt="Download Reports"
                         />
                       </div>
-                      <div className="lg:w-1/2 ">
-                        <h1 className="text-3xl ">
+                      <div className="lg:w-1/2 w-full">
+                        <h1 className="text-3xl">
                           <i
                             className="fa-solid fa-download"
                             style={{ color: "#09e8ec" }}
                           ></i>{" "}
                           Download Reports
                         </h1>
-                        <p className="flex mt-4 ">
+                        <p className="flex mt-4">
                           Our experts have conducted interviews for companies of
                           all sizes and domains. We have experts for every
                           domain and every company size.
                         </p>
-                        <div className="mt-4 mx-auto flex flex-row items-center gap-6">
+                        <div className="mt-4 mx-auto flex flex-col sm:flex-row items-center gap-6">
                           <button className="flex items-center justify-center bg-black hover:bg-blue text-white font-bold py-4 px-8 rounded-full mt-4">
                             Get Started
                           </button>
-                          <a href="#" className=" text-blue mt-4">
+                          <a href="#" className="text-blue mt-4">
                             Explore Our Platform{" "}
                             <i className="fa-solid fa-arrow-right"></i>
                           </a>

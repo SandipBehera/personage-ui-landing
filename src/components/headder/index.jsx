@@ -35,46 +35,45 @@ export const Headders = () => {
             : "bg-white"
         }`}
       >
-        <div className=" bg-black mx-auto max-w-7xl px-4 sm:px-6 lg:px-36 h-10 ">
+        <div className=" bg-black mx-auto max-w-7xl px-4 sm:px-6 lg:px-36 h-10">
           <div className="flex items-center justify-between">
-            <div className="flex items-center text-white p-2 ">
+            <div className="flex items-center text-white p-2">
               <a
                 href="/"
-                className="text-white pr-4"
-                style={{
-                  borderRight: "1px solid white",
-                  paddingRight: "8px", // Adjust the padding as needed
-                }}
+                className="text-white pr-4 border-r border-white mr-4 mb-2 md:mb-0"
               >
-                Automate the Interviews &nbsp; <i class="fa-solid fa-square-up-right"></i>
+                Automate the Interviews &nbsp;
+                <i className="fa-solid fa-square-up-right"></i>
               </a>
-              <a href="/" className="text-white ml-4" style={{
-                  borderRight: "1px solid white",
-                  paddingRight: "8px", // Adjust the padding as needed
-                }}>
-              Assessment platform &nbsp; <i class="fa-solid fa-square-up-right"></i>
+              <a
+                href="/"
+                className="text-white pr-4 border-r border-white mr-4 mb-2 md:mb-0 hidden sm:inline-block"
+              >
+                Assessment platform &nbsp;
+                <i className="fa-solid fa-square-up-right"></i>
               </a>
-              <a href="/" className="text-white ml-4" style={{
-                  borderRight: "1px solid white",
-                  paddingRight: "8px", // Adjust the padding as needed
-                }}>
-             Mock Interviews &nbsp; <i class="fa-solid fa-square-up-right"></i>
+              <a
+                href="/"
+                className="text-white pr-4 border-r border-white mr-4 mb-2 md:mb-0 hidden sm:inline-block"
+              >
+                Mock Interviews &nbsp;
+                <i className="fa-solid fa-square-up-right"></i>
               </a>
             </div>
-            <div className="hidden md:flex ml-36 items-baseline space-x-4">
-            <a href="/" className="text-white ml-4" style={{
-                  borderRight: "1px solid white",
-                  paddingRight: "8px", // Adjust the padding as needed
-                }}>
-                  Contact Us
-                </a>
-                <a href="/" className="text-white ml-4" >
-                  Login
-                </a>
-              </div>
-
+            <div className="flex flex-wrap items-baseline space-x-4 mt-2 md:mt-0 hidden sm:flex">
+              <a
+                href="/"
+                className="text-white pr-4 border-r border-white mr-4"
+              >
+                Contact Us
+              </a>
+              <a href="/" className="text-white">
+                Login
+              </a>
+            </div>
           </div>
         </div>
+
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 container">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
@@ -236,8 +235,8 @@ export const Headders = () => {
             <div className="flex-shrink-0">
               <a href="/">
                 <img
-                  className="h-8 w-100"
-                  src="../../img/Trescorp-logo.png"
+                  className="h-20 w-100"
+                  src="../../img/personage_logo.png"
                   alt="Trescorp"
                 />
               </a>
@@ -263,7 +262,7 @@ export const Headders = () => {
                   : "text-gray-300 hover:bg-gray-700 hover:nav-text"
               }`}
             >
-              About Us
+              Solutions
             </a>
             <a
               href="/team"
@@ -273,7 +272,7 @@ export const Headders = () => {
                   : "text-gray-300 hover:bg-gray-700 hover:nav-text"
               }`}
             >
-              Executive Team
+              Products
             </a>
             <a
               href="/our-service"
@@ -283,7 +282,7 @@ export const Headders = () => {
                   : "text-gray-300 hover:bg-gray-700 hover:nav-text"
               }`}
             >
-              Our Services
+              Integration
             </a>
             <a
               href="/products"
@@ -293,7 +292,7 @@ export const Headders = () => {
                   : "text-gray-300 hover:bg-gray-700 hover:nav-text"
               }`}
             >
-              Products
+              Pricing
             </a>
             <a
               href="/contact-us"
