@@ -261,12 +261,12 @@ const HomeComponent = () => {
             </section>
           </FaderComponent>
           <FaderComponent>
-            <section className="text-gray-600 body-font mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-40 md:my-0">
+            <section className="text-gray-600 container body-font mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-20 md:my-0">
               <div className="flex flex-col lg:flex-row items-center justify-center m-auto">
                 <div className="w-full lg:w-1/2 text-center">
                   <video
                     src="../../video/video.mp4" // Update with the correct path to your video file
-                    className="w-full h-lvh md:h-lvh object-cover"
+                    className="w-full  lg:w-full sm:h-lvh"
                     autoPlay
                     loop
                     muted

@@ -2246,6 +2246,10 @@ section.section-hero .iv-new-hero-hero-subtitle {
     display: flex;
   }
 
+  .sm\:h-lvh {
+    height: 100lvh;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -2426,6 +2430,16 @@ section.section-hero .iv-new-hero-hero-subtitle {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .lg\:text-left {
