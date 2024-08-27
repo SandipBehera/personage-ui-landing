@@ -53,16 +53,16 @@ export const Headders = () => {
                 <i className="fa-solid fa-square-up-right"></i>
               </a>
               <a
-                href="/"
+                href="/about-us"
                 className="text-white pr-4 border-r border-white mr-4 mb-2 md:mb-0 hidden sm:inline-block"
               >
-                Mock Interviews &nbsp;
+                About us &nbsp;
                 <i className="fa-solid fa-square-up-right"></i>
               </a>
             </div>
             <div className="flex flex-wrap items-baseline space-x-4 mt-2 md:mt-0 hidden sm:flex">
               <a
-                href="/"
+                href="/contact-us"
                 className="text-white pr-4 border-r border-white mr-4"
               >
                 Contact Us
@@ -99,6 +99,7 @@ export const Headders = () => {
                 >
                   Home{" "}
                 </a>
+                
                 <a
                   href="/about-us"
                   className={`rounded-md px-3 py-2 text-sm font-medium ${
@@ -134,9 +135,9 @@ export const Headders = () => {
                 </a>
               </div>
               <div className="hidden md:flex ml-36 items-baseline space-x-4">
-                <button className="bg-transparent text-black border  px-10 py-2 text-sm font-medium">
+                <a href="/contact-us" className="bg-transparent text-black border  px-10 py-2 text-sm font-medium">
                   Request Demo
-                </button>
+                </a>
                 <button className="bg-black text-white border  px-6 py-2 text-sm font-medium">
                   Sign Up
                 </button>
@@ -253,6 +254,16 @@ export const Headders = () => {
               aria-current={location.pathname === "/" ? "page" : undefined}
             >
               Home
+            </a>
+            <a
+              href="/about-us"
+              className={`block rounded-md px-3 py-2 text-base font-medium ${
+                location.pathname === "/about-us"
+                  ? "bg_yellow text-white"
+                  : "text-gray-300 hover:bg-gray-700 hover:nav-text"
+              }`}
+            >
+              About Us
             </a>
             <a
               href="/about-us"

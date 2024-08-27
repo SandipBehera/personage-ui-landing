@@ -92,6 +92,9 @@ module.exports = {
     maxWidth: {
       'none': 'none',
     },
+    boxShadow: {
+      'custom-lg': '0 10px 30px rgba(0, 0, 0, 0.3)', // Example custom shadow
+    }
   },
   variants: {
     extend: {
