@@ -693,6 +693,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-36 {
+  margin-top: 9rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -707,14 +711,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
-}
-
-.mt-36 {
-  margin-top: 9rem;
 }
 
 .block {
@@ -779,10 +775,6 @@ video {
 
 .h-lvh {
   height: 100lvh;
-}
-
-.h-36 {
-  height: 9rem;
 }
 
 .w-14 {
@@ -2113,7 +2105,7 @@ code {
 
 @media (max-width: 640px){
   .wrapper {
-    width: 350px;
+    width: 380px;
     height: 63px;
     gap: 4px;
     margin: 32px auto 0;
@@ -2246,14 +2238,6 @@ section.section-hero .iv-new-hero-hero-subtitle {
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .sm\:mt-40 {
-    margin-top: 10rem;
-  }
-
   .sm\:inline-block {
     display: inline-block;
   }
@@ -2290,11 +2274,6 @@ section.section-hero .iv-new-hero-hero-subtitle {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -2315,12 +2294,12 @@ section.section-hero .iv-new-hero-hero-subtitle {
     margin-top: 0;
   }
 
-  .md\:mt-20 {
-    margin-top: 5rem;
-  }
-
   .md\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .md\:mt-20 {
+    margin-top: 5rem;
   }
 
   .md\:flex {
@@ -2394,20 +2373,20 @@ section.section-hero .iv-new-hero-hero-subtitle {
     margin-top: 0;
   }
 
-  .lg\:mt-40 {
-    margin-top: 10rem;
-  }
-
-  .lg\:mt-5 {
-    margin-top: 1.25rem;
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .lg\:mt-20 {
     margin-top: 5rem;
   }
 
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
+  .lg\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .lg\:w-1\/2 {

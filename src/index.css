@@ -841,7 +841,7 @@ clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
 }
 @media (max-width: 640px){
 .wrapper {
-    width: 350px;
+    width: 380px;
     height: 63px;
     gap: 4px;
     margin: 32px auto 0;
